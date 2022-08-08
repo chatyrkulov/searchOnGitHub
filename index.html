@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GitHub-Info</title>
+	<style>
+		.login-inp{
+			border: none;
+			border-bottom: 1px solid #aaa;
+			margin: 0 1rem;
+			width: 500px;
+			height: 80px;
+			outline: none;
+			font-size: 20px;
+			background-color: #efefef;
+			margin-left: 9rem;
+			font-size: 26px;
+			border-radius: 20px;
+			padding-left: 10px;
+		}
+		.btn-danger{
+			margin-top: 24px;
+			width: 200px;
+			height: 90px;
+			cursor: pointer;
+			background-color: #8ff02f;
+			outline: none;
+			border: 1px solid #8ff02f;
+			border-radius: 20px;
+		}
+		h2{
+			text-align-last: center;
+			font-weight: 800;
+			color: black;
+			font-size: 28px;
+			text-transform: uppercase;
+		}
+		#result{
+			display: flex;
+		}
+		#resultBlog{
+			margin-left: 6rem;
+		}
+	</style>
+</head>
+<body>
+	<h2>информация о пользователе GitHub</h2>
+
+ 	<form id="myForm" autocomplete="off">
+ 			<input type="text" class="form-control login-inp" id="search" placeholder="Search login" >
+ 			<button class="btn btn-danger btn-block ">
+ 				Поиск..
+ 			</button>
+ 		
+	</form>
+
+	<div id="result" >
+		<div id="resultName"></div>
+		<div id="resultBlog"></div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
